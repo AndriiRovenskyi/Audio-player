@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>MP3pleyar</title>
+    <link href="style.css" rel="stylesheet">
+    <script type="text/javascript" src="jq/jquery-3.0.0.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+
+</head>
+
+<body>
+  
+    <audio id="audio"></audio>
+    <div id="main">
+        <div id="title">
+            <h1></h1>
+            <h4></h4>
+        </div>
+        <div id="analayser">
+            <canvas id="analyser_render"></canvas>
+        </div>
+        <div id="conteiner--songs">
+            <ul></ul>
+        </div>
+    </div>
+    
+    <div id="player">
+        <div id="player--container">
+            <div id="play" class="player--element"></div>
+            <div id="pause" class="player--element"></div>
+            <div id="loop" class="player--element"></div>
+            <div id="timeline" class="player--element">
+                <div id="playHead"></div>
+            </div>
+            <div id="duration" class="player--element">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div id="prev" class="player--element"></div>
+            <div id="volume" class="player--element"></div>
+            <div id="next" class="player--element"></div>
+            <div id="play--list" class="player--element"></div>
+        </div>
+    </div>
+<!--<div class="twinkling"></div>-->
+    <script src="scriptNew.js"></script>
+</body>
+
+</html>

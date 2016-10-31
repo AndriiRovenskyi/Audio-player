@@ -1,0 +1,260 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    font-family: monospace;
+    font-size: 20px;
+    color: #1A1818;
+}
+
+a img {
+    margin-right: 10px;
+    width: 18px;
+    height: 18px;
+}
+
+body {
+    background: #1A1818;
+}
+
+#main {}
+
+#title {
+    margin-top: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: sans-serif;
+    letter-spacing: 10px;
+}
+
+#title h1 {
+    font-size: 70px;
+    color: aliceblue;
+}
+
+#title h4 {
+    font-size: 30px;
+    color: dimgray;
+}
+
+#analayser {}
+
+#player {
+    width: 100%;
+    background-image: url(img/bg.png);
+    background-repeat: repeat;
+    position: fixed;
+    bottom: 0px;
+    padding: 5px 20px 5px 20px;
+    -webkit-box-shadow: inset 0px 0px 4px 2px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: inset 0px 0px 4px 2px rgba(0, 0, 0, 0.75);
+    box-shadow: inset 0px 0px 4px 2px rgba(0, 0, 0, 0.75);
+}
+
+#player--container {
+    max-width: 1200px;
+    border-radius: 5px;
+    margin: auto;
+    cursor: pointer;
+}
+
+.player--element {
+    float: left;
+    width: 50px;
+    height: 50px;
+    margin-left: 10px;
+}
+
+#play {
+    background-image: url(img/play.png);
+}
+
+#play:hover {
+    background-image: url(img/play2.png);
+}
+
+#pause {
+    background-image: url(img/pausa.png);
+}
+
+#pause:hover {
+    background-image: url(img/pausa2.png);
+}
+
+#prev {
+    background-image: url(img/-.png);
+}
+
+#prev:hover {
+    background-image: url(img/-2.png);
+}
+
+#volume {
+    background-image: url(img/volume.png);
+}
+
+#volume:hover {
+    background-image: url(img/volume2.png);
+}
+
+#next {
+    background-image: url(img/+.png);
+}
+
+#next:hover {
+    background-image: url(img/+2.png);
+}
+
+#play--list {
+    background-image: url(img/playList.png);
+}
+
+#play--list:hover {
+    background-image: url(img/playList2.png);
+}
+
+#loop {
+    background-image: url(img/loop.png);
+}
+
+#loop:hover {
+    background-image: url(img/loop2.png);
+}
+
+#timeline {
+    width: 600px;
+    height: 20px;
+    margin-top: 15px;
+    border-radius: 15px;
+    background: #1A1818;
+}
+
+#playHead {
+    width: 20px;
+    height: 20px;
+    background-image: url(img/metalick.png);
+    background-size: cover;
+}
+
+#duration {
+    width: 150px;
+    color: #1A1818;
+    font-family: monospace;
+    font-size: 15px;
+    font-weight: 500;
+    padding-top: 15px;
+}
+
+@media screen and (max-width: 1230px) {
+    #timeline {
+        width: 350px;
+    }
+}
+
+#conteiner--songs {
+    width: 100%;
+    position: absolute;
+    bottom: 0px;
+    /*    background-image: url(img/bg.png);*/
+    display: none;
+    padding: 20px 100px 50px 120px;
+    font-family: monospace;
+    font-size: 20px;
+    /*    color: #1A1818;*/
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+#conteiner--songs ul li {
+    padding: 10px;
+    list-style: none;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+#conteiner--songs ul {
+    background: rgba(24, 26, 26, 0.9);
+    padding: 5px;
+    border-radius: 5px;
+    -webkit-box-shadow: 0px 0px 23px 1px rgba(4, 215, 222, 1);
+    -moz-box-shadow: 0px 0px 23px 1px rgba(4, 215, 222, 1);
+    box-shadow: 0px 0px 23px 1px rgba(4, 215, 222, 1);
+}
+
+#conteiner--songs ul li:hover {
+    background: rgba(4, 215, 222, 0.5);
+    color: #1A1818;
+}
+
+div#analayser > canvas {
+    width: 100%;
+    height: 600px;
+    float: left;
+    position: absolute;
+    bottom: 60px;
+}
+
+
+/* ============================================================================================== 
+Nick Mkrtchyan
+http://www.facebook.com/sonick.pk
+http://www.Mkrtchyan.zz.mu
+================================================================================================= */
+/*
+
+@keyframes move-twink-back {
+    from {background-position:0 0;}
+    to {background-position:-10000px 5000px;}
+}
+@-webkit-keyframes move-twink-back {
+    from {background-position:0 0;}
+    to {background-position:-10000px 5000px;}
+}
+@-moz-keyframes move-twink-back {
+    from {background-position:0 0;}
+    to {background-position:-10000px 5000px;}
+}
+@-ms-keyframes move-twink-back {
+    from {background-position:0 0;}
+    to {background-position:-10000px 5000px;}
+}
+
+
+
+body, .twinkling{
+  position:absolute;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  width:100%;
+  height:100%;
+  display:block;
+}
+.twinkling{
+    z-index: -999999999999999;
+}
+
+body {
+  background:#000 url(http://www.script-tutorials.com/demos/360/images/stars.png) repeat top center;
+  z-index:0;
+}
+
+.twinkling{
+  background:transparent url(http://www.script-tutorials.com/demos/360/images/twinkling.png) repeat top center;
+  z-index:1;
+
+  -moz-animation:move-twink-back 200s linear infinite;
+  -ms-animation:move-twink-back 200s linear infinite;
+  -o-animation:move-twink-back 200s linear infinite;
+  -webkit-animation:move-twink-back 200s linear infinite;
+  animation:move-twink-back 200s linear infinite;
+}
+*/
+
+
